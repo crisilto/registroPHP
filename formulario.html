@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="login-container">
         <h2>Login</h2>
@@ -16,8 +18,18 @@
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
 
+            <label for="recordar">
+                <input type="checkbox" name="recordar" id="recordar">Recuérdame
+            </label>
+
             <button type="submit">Iniciar sesión</button>
         </form>
     </div>
+    <script>
+        if (document.cookie.includes("nombre_usuario")) {
+          window.location.href = "dashboard.php";
+        }
+    </script>
 </body>
+
 </html>

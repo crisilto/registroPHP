@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: monospace;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -18,14 +18,17 @@ body {
 
 h2 {
     color: #333;
+    font-size: 24px;
 }
 
 p {
     color: #666;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
-a {
+a, 
+.btn-submit {
     display: inline-block;
     background-color: #4caf50;
     color: #fff;
@@ -33,9 +36,12 @@ a {
     border: none;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-a:hover {
+a:hover,
+.btn-submit:hover  {
     background-color: #45a049;
+    cursor: pointer;
 }
